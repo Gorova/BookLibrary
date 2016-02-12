@@ -1,0 +1,11 @@
+﻿@model BookLibrary.Web.ViewModel.CategoryViewModel
+@{
+    ViewBag.Title = "Edit category";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel("CategoryEditor")
+}

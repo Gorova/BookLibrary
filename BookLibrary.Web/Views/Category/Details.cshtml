@@ -1,0 +1,36 @@
+﻿@model BookLibrary.Web.ViewModel.CategoryViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <hr/>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(i => i.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(i => i.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(i => i.DateOfCreating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(i => i.DateOfCreating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(i => i.Books)
+        </dt>
+        @foreach (var book in Model.Books)
+        {
+            <dd>
+                @book.Title
+            </dd>
+        }
+    
+    </dl>
+</div>

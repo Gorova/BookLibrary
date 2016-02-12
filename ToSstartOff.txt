@@ -1,0 +1,14 @@
+1. Execute script in DAL/Script
+2. Change connection string(if it needs)
+
+project BookLibrary.Web:
+ <connectionStrings>
+    <add name="BookLibrarySecurityConnection" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=BookLibrarySecurity;integrated Security=SSPI;" providerName="System.Data.SqlClient"/>
+ </connectionStrings
+
+ <add key="WebApiHost" value="http://localhost:53658/" />
+
+project BookLibrary WebApi:
+  <connectionStrings>
+    <add name="BookLibrary" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=BookLibrary;integrated Security=SSPI;MultipleActiveResultSets = True" providerName="System.Data.SqlClient"/>
+  </connectionStrings>

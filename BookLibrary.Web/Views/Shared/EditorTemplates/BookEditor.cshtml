@@ -1,0 +1,46 @@
+﻿@model BookLibrary.Web.ViewModel.BookViewModel
+           @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr/>
+    <div class="form-group">
+        @Html.LabelFor(i => i.Title, new {@class = "col-md-2"})
+        <div class="col-md-10">
+            @Html.TextBoxFor(i => i.Title, new {@class = "form-control"})
+            @Html.ValidationMessageFor(i => i.Title)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.Isbn, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10">
+            @Html.TextBoxFor(i => i.Isbn, new {@class = "form-control"})
+            @Html.ValidationMessageFor(i => i.Isbn)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.Author, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(i => i.Author, new {@class = "form-control"})
+            @Html.ValidationMessageFor(i => i.Author)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.SelectedCategoryId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.ListBoxFor(i => i.SelectedCategoryId, Model.AllCategories, new { @class = "multiselect-select2" })
+            @Html.ValidationMessageFor(i => i.SelectedCategoryId)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="save" class="btn btn-default"/>
+            <input type="button" value="cancel" class="btn btn-default" onclick="location.href = '@Url.Action("Index", "Book")'" />
+
+        </div>
+    </div>
+</div>
+

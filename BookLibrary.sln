@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.DAL", "Library.DAL\BookLibrary.DAL.csproj", "{D3D6CCD0-BB61-4981-B58A-B7644431921B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Bootstrap", "BookLibrary.Bootstrap\BookLibrary.Bootstrap.csproj", "{A7B3724E-4B63-4266-A36B-4B7ECA2F9786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Common", "BookLibrary.Common\BookLibrary.Common.csproj", "{BE4EE384-5A78-4B5B-85BA-27AA31373445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Web", "BookLibrary.Web\BookLibrary.Web.csproj", "{6F6FBD1E-6E47-4D3B-9B36-11D0A650296B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.WebApi", "BookLibrary.WebApi\BookLibrary.WebApi.csproj", "{50CD7E01-C282-4F28-9BC8-07381138980F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "To start off", "To start off", "{79996867-C88B-41EB-AC82-DE07DE1E244E}"
+	ProjectSection(SolutionItems) = preProject
+		ToSstartOff.txt = ToSstartOff.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3D6CCD0-BB61-4981-B58A-B7644431921B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D6CCD0-BB61-4981-B58A-B7644431921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D6CCD0-BB61-4981-B58A-B7644431921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D6CCD0-BB61-4981-B58A-B7644431921B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B3724E-4B63-4266-A36B-4B7ECA2F9786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B3724E-4B63-4266-A36B-4B7ECA2F9786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B3724E-4B63-4266-A36B-4B7ECA2F9786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B3724E-4B63-4266-A36B-4B7ECA2F9786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4EE384-5A78-4B5B-85BA-27AA31373445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4EE384-5A78-4B5B-85BA-27AA31373445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4EE384-5A78-4B5B-85BA-27AA31373445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4EE384-5A78-4B5B-85BA-27AA31373445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6FBD1E-6E47-4D3B-9B36-11D0A650296B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6FBD1E-6E47-4D3B-9B36-11D0A650296B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6FBD1E-6E47-4D3B-9B36-11D0A650296B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6FBD1E-6E47-4D3B-9B36-11D0A650296B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CD7E01-C282-4F28-9BC8-07381138980F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CD7E01-C282-4F28-9BC8-07381138980F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CD7E01-C282-4F28-9BC8-07381138980F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CD7E01-C282-4F28-9BC8-07381138980F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

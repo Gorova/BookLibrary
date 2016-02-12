@@ -1,0 +1,52 @@
+﻿@model BookLibrary.Web.ViewModel.BookViewModel
+@{
+    ViewBag.Title = "Delete book";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>Are you sure in deleting this book?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(i => i.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(i => i.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(i => i.Isbn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(i => i.Isbn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(i => i.Author)
+        </dt>
+        <dd>
+            @Html.DisplayFor(i => i.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(i => i.AllCategories)
+        </dt>
+        @foreach (var category in Model.AllCategories)
+        {
+            <dd>
+                @category.Text
+            </dd>
+        }
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        <div class="form-actions no-color">
+            @Html.HiddenFor(i => i.Id)
+            <input type="submit" value="save" class="btn btn-default" />
+            <input type="button" value="cancel" class="btn btn-default" onclick="location.href = '@Url.Action("Index", "Book")'" />
+        </div>
+    }
+</div>
